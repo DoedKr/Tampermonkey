@@ -78,7 +78,7 @@ jQuery($ => {
                 e.stopPropagation();
 
                 // 4. 关键：拼接绝对路径，方便 NotebookLM 索引
-                const fullUrl = window.location.origin + $time.attr('href');
+                const fullUrl = $time.attr('href');
                 const markdownLink = `[${fullDateTime}](${fullUrl})`;
 
                 GM_setClipboard(markdownLink);
